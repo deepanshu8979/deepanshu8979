@@ -1,0 +1,40 @@
+// SIMPLE CALCULATOR..............................................
+#include <iostream>
+using namespace std;
+int main() 
+{
+  char ope;
+  float num1,num2;
+
+  cout<<"Enter operation to perform: +, -, *, /:";
+  cin>>ope;
+
+  cout<<"Enter first numbers:";
+  cin>>num1;
+  cout<<"Enter second numbers:";
+  cin>>num2;
+
+  switch(ope) 
+  {
+    case '+':
+      cout<<"Addition of "<<num1<<"+"<<num2<<"="<<num1+num2;
+      break;
+
+    case '-':
+      cout<<"substraction of "<<num1<<"-"<<num2<<"="<<num1-num2;
+      break;
+
+    case '*':
+      cout<<"Multiplication of "<<num1<<"*"<<num2<<"="<<num1*num2;
+      break;
+
+    case '/':
+      cout<<"Division of "<<num1<<"/"<<num2<<"="<<num1/num2;
+      break;
+
+    default:
+      cout<<"Error! The operator is not correct";
+      break;
+  }
+  return 0;
+}
